@@ -2,7 +2,7 @@
 
 ## Context
 
-In this project, data was gathered from 40 participants. The participants were required to play a game where they tried to land a quadrotor on a landing pad successfully. The game adapts to the participants' performance and automatically toggles automation assistance on/off. Each participant had 20 trials after which they reported their self-confidence level in landing the quadrotor. (Data in for each participant in separate CSV files)
+In this project, data was gathered from 40 participants. The participants were required to play a game where they tried to land a quadrotor on a landing pad successfully. The game adapts to the participants' performance and automatically toggles automation assistance on/off. Each participant had 20 trials after which they reported their self-confidence level in landing the quadrotor. (Data for each participant in separate CSV files)
 
 ## Project Goal
 
