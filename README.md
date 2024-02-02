@@ -14,23 +14,23 @@ To build the model a Markov Decision Process (MDP) is used. However, instead of 
 
 The MDP model consists of:  
 
-Action: change in performance between trials + if automation assistance was on/off for the trial  
-States: if the participant was of low/high self-confidence for the trial  
-Transition probability: calculated using the action of the participant + the state of the participant in the previous trial
+-Action: change in performance between trials + if automation assistance was on/off for the trial  
+-States: if the participant was of low/high self-confidence for the trial  
+-Transition probability: calculated using the action of the participant + the state of the participant in the previous trial
 
 ## Code Files
 
-CleanData.py: Cleans and categorizes the data to input into the model to be optimized 
+-CleanData.py: Cleans and categorizes the data to input into the model to be optimized 
 
-MDPmodel.py: Calculates the transition probabilities and loglikelihood for our model. The loglikelihood is then used as the fitness parameter for the genetic algorithm optimizing the model
+-MDPmodel.py: Calculates the transition probabilities and loglikelihood for our model. The loglikelihood is then used as the fitness parameter for the genetic algorithm optimizing the model
 
-GAtoCSV.py (Main): This is the "main" file to run. It runs the MDPmodel.py but outputs the results of the optimized model to a CSV.
+-GAtoCSV.py (Main): This is the "main" file to run. It runs the MDPmodel.py but outputs the results of the optimized model to a CSV.
 
-5foldCrossVal.py: Validates the model by doing 10 iterations of a 5-fold cross-validation.
+-5foldCrossVal.py: Validates the model by doing 10 iterations of a 5-fold cross-validation.
 
-DataROC.py: Assesses the performance of the model by plotting a Receiver Operation Curve and calculating the area under it.
+-DataROC.py: Assesses the performance of the model by plotting a Receiver Operation Curve and calculating the area under it.
 
-FwdProbFunc.py, GAFunc, vector2modelfunc: Function files.
+-FwdProbFunc.py, GAFunc, vector2modelfunc: Function files.
 
 
 
