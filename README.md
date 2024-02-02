@@ -16,7 +16,7 @@ The MDP model consists of:
 
 - Action: change in performance between trials + if automation assistance was on/off for the trial  
 - States: if the participant was of low/high self-confidence for the trial  
-- Transition probability: calculated using the action of the participant + the state of the participant in the previous trial
+- Transition probabilities: calculated using the action of the participant + the state of the participant in the previous trial
 
 ## Code Files
 
