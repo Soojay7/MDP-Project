@@ -5,7 +5,7 @@ import pygad
 import pandas as ps
 import math
 from vector2modelfunc import *
-from FwdProbFunc import *
+import FwdProbFunc as fwd
 
 lowSC = 1  # Low Self Confidence
 highSC = 2  # High Self Confidence
@@ -21,7 +21,7 @@ np = len(U)  # number of participants
 
 # Defining fitness function for Genetic Algorithm (GA)
 def fitness_func(solution, solution_idx):
-    fitness = forwardprob(solution, U, Y, na, nt, ns, np)
+    fitness = fwd.forwardprob(solution, U, Y, na, nt, ns, np)
     return fitness
 
 
